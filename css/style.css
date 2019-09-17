@@ -8,7 +8,7 @@ body {
 }
 
 .header {
-  background-image: url(/Experiment/img/bgexperiment.jpg);
+  background-image: url(/Experiment-HTML-CSS/img/bgexperiment.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,7 +39,7 @@ nav {
   font-size: 30px;
   color: #fff;
   position: fixed;
-  padding:0 40px;
+  margin:0 40px;
   top: 0;
   right: 0;
   cursor: pointer;
@@ -68,7 +68,78 @@ nav {
   color: #fff;
 }
 
-/*Header Conternt*/
+/*Slide Menu*/
+.slide-menu{
+  position: absolute;
+  top:0;
+  right:0;
+  width:400px;
+  height:100vh;
+  background:black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform:translateX(100%);
+  z-index: 1000;
+  transition: all ease-in 0.5s;
+}
+
+.slide-menu ul{
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.slide-menu li{
+  padding:10px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.slide-menu li:hover{
+  background:#f177cc;
+}
+
+
+.slide-menu a{
+  color:#fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+.slide-menu .close{
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  margin:0 40px;
+  top:20px;
+  right:0;
+  cursor: pointer;
+}
+
+.menu-active{
+  transform: translateX(0%);
+}
+
+.slide-menu .contact{
+  position: absolute;
+  bottom:50px;
+}
+
+.slide-menu .contact a{
+  font-size: 20px;
+  padding:10px 20px;
+  border:solid 1px #f177cc;
+  color:#f177cc;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/*Header Content*/
 .content-header {
   position: relative;
   top: 150px;
@@ -112,7 +183,7 @@ nav {
   font-size: 20px;
   background: #000;
   height: 177px;
-  width: 497px;
+  width: 700px;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 50px;
@@ -149,12 +220,23 @@ nav {
 }
 
 .box,
-.number h1 {
+.number2 h1 {
   color: rgba(255, 255, 255, 0.5);
 }
 
 .box,
-.number h1:hover {
+.number3 h1 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.box,
+.number2 h1:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.box,
+.number3 h1:hover {
   color: #fff;
   cursor: pointer;
 }

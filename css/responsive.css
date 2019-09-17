@@ -52,7 +52,7 @@
 
   .content-header {
     position: relative;
-    top: 130px;
+    top: 200px;
   }
   .content-header h1 {
     line-height: 100px;
@@ -68,4 +68,21 @@
     bottom: 0;
     line-height: 20px;
   }
+
+  .slide-menu{
+    width:100%;
+  }
+
+  .logo{
+    margin-left:20px;
+  }
+
+  .menu{
+    margin-right:20px;
+  }
+
+  .slide-menu .close{
+    margin:0 20px;
+  }
 }
+
